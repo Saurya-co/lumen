@@ -47,9 +47,6 @@ Artifacts land in `dist/`:
   first launch — recipients choose **More info → Run anyway**. To remove the
   warning, sign the executables with a code-signing certificate
   (`electron-builder.yml` → `win.certificateSubjectName`).
-- Executables exceed GitHub's 100 MB file limit. Attach them to a
-  [GitHub Release](https://docs.github.com/en/repositories/releasing-projects-on-github)
-  instead of committing them (`dist/` is git-ignored).
 
 ## Project structure
 
@@ -65,4 +62,3 @@ public/            Static assets incl. master logo.svg
 
 1. Bump `version` in `package.json`.
 2. Run `npm run electron:build`.
-3. Draft a GitHub Release and attach the installer, portable exe, and blockmaps.
