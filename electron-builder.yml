@@ -1,0 +1,34 @@
+appId: com.lumen.studybrowser
+productName: Lumen
+copyright: Copyright (c) Lumen
+
+directories:
+  output: dist
+  buildResources: electron/build
+
+files:
+  - "out/**/*"
+  - "electron/dist/**/*"
+  - "package.json"
+
+extraResources: []
+
+asar: true
+
+win:
+  target:
+    - nsis
+    - portable
+  icon: electron/build/icon.ico
+
+nsis:
+  artifactName: Lumen-Setup-${version}-${arch}.${ext}
+  installerIcon: electron/build/icon.ico
+  uninstallerIcon: electron/build/icon.ico
+
+portable:
+  artifactName: Lumen-${version}-portable-${arch}.${ext}
+
+compression: maximum
+
+npmRebuild: false

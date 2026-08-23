@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="tile" cx="0.35" cy="0.18" r="1.05">
+      <stop offset="0" stop-color="#1F1F2A"/>
+      <stop offset="0.55" stop-color="#121218"/>
+      <stop offset="1" stop-color="#07070B"/>
+  </radialGradient>
+    <linearGradient id="gold" x1="55" y1="38" x2="148" y2="172" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFEAB0"/>
+      <stop offset="0.42" stop-color="#E8C265"/>
+      <stop offset="0.72" stop-color="#B9872C"/>
+      <stop offset="1" stop-color="#7E5613"/>
+  </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.46">
+      <stop offset="0" stop-color="#E8C265" stop-opacity="0.16"/>
+      <stop offset="0.7" stop-color="#E8C265" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#E8C265" stop-opacity="0"/>
+  </radialGradient>
+    <linearGradient id="bevel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.25"/>
+  </linearGradient>
+</defs>
+
+  <rect x="4" y="4" width="192" height="192" rx="48" fill="url(#tile)"/>
+  <rect x="4" y="4" width="192" height="192" rx="48" fill="url(#bevel)"/>
+  <rect x="4.5" y="4.5" width="191" height="191" rx="47.5" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" fill="none"/>
+
+  <circle cx="100" cy="100" r="78" fill="url(#glow)"/>
+
+  <circle cx="100" cy="100" r="68" stroke="#E8C265" stroke-opacity="0.18" stroke-width="0.8" fill="none"/>
+
+  <g>
+    <path
+      d="M 138 50
+         C 130 47, 118 51, 110 63
+         C 102 75, 92 89, 85 103
+         C 78 117, 82 127, 98 125
+         C 114 123, 130 131, 132 147
+         C 134 163, 120 172, 102 168"
+      fill="none"
+      stroke="#000000"
+      stroke-opacity="0.45"
+      stroke-width="16"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      transform="translate(0.6,1.4)"/>
+
+    <path
+      d="M 138 50
+         C 130 47, 118 51, 110 63
+         C 102 75, 92 89, 85 103
+         C 78 117, 82 127, 98 125
+         C 114 123, 130 131, 132 147
+         C 134 163, 120 172, 102 168"
+      fill="none"
+      stroke="url(#gold)"
+      stroke-width="14"
+      stroke-linecap="round"
+      stroke-linejoin="round"/>
+    <path
+      d="M 138 50
+         C 130 47, 118 51, 110 63
+         C 102 75, 92 89, 85 103
+         C 78 117, 82 127, 98 125
+         C 114 123, 130 131, 132 147
+         C 134 163, 120 172, 102 168"
+      fill="none"
+      stroke="url(#sheen)"
+      stroke-width="5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-opacity="0.55"
+      transform="translate(0,-1.8)"/>
+</g>
+  <circle cx="138" cy="50" r="2.6" fill="#FFE9A8" opacity="0.9"/>
+</svg>
